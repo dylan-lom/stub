@@ -1,0 +1,5 @@
+public Example();
+public void setProp(String value);
+public String getProp();
+public long getLong();
+public static long addLongs(long a, long b);

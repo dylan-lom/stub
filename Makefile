@@ -2,8 +2,10 @@
 
 CLASSES=Stub.class
 
+all: $(CLASSES)
+
 test: $(CLASSES)
-	javap Stub | java -ea Stub 2>/dev/null
+	java -ea Stub < Example.def
 
 %.class: %.java
 	javac -Xlint $<

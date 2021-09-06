@@ -55,6 +55,7 @@ public class Stub {
       if (type.equals("double")) return "0.0d";
       if (type.equals("char")) return "'\u0000'";
       if (type.equals("boolean")) return "false";
+      if (type.equals("void") || type.length() == 0) return "";
       return "null";
     }
 
@@ -78,7 +79,7 @@ public class Stub {
 
     System.out.printf("%s %s %s(%s) {\n", sig.getModifiers(), sig.getType(), sig.getName(), sig.getArgs());
     System.out.printf("  assert false : \"TODO: Implement %s\";\n", sig.getName());
-    System.out.printf("  return %s\n", sig.getTypeDefault());
+    System.out.printf("  return %s;\n", sig.getTypeDefault());
     System.out.printf("}\n");
   }
 
