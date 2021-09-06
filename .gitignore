@@ -4,4 +4,4 @@ dist/
 build/
 
 a.out
-
+*.class
