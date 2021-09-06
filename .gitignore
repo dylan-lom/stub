@@ -1,0 +1,7 @@
+*.swp
+tags
+dist/
+build/
+
+a.out
+
